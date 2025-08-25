@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Luggage Rules – What Can I Bring?</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container">
+        <h1>What can I bring?</h1>
+        <p class="subtitle">Interactive guide for carry‑on, checked baggage, and customs rules.</p>
+      </div>
+    </header>
+
+    <div class="disclaimer">
+      <div class="container">
+        <strong>Disclaimer:</strong> This is an informational prototype. Rules change and vary by airline and airport. Always verify with your airline, airport security (TSA/EU), and official customs websites. Not legal advice.
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="controls">
+        <div class="field">
+          <label for="origin">Origin</label>
+          <select id="origin"></select>
+        </div>
+        <div class="field">
+          <label for="destination">Destination</label>
+          <select id="destination"></select>
+        </div>
+        <div class="field field--wide">
+          <label for="query">Item</label>
+          <input id="query" type="text" placeholder="e.g., power bank, meat, liquids, fruits, fireworks">
+        </div>
+      </section>
+
+      <section id="results" class="results">
+        <div class="empty">
+          <p>Select origin and destination, then type an item to see rules.</p>
+        </div>
+      </section>
+
+      <section class="sources">
+        <h2>Sources</h2>
+        <ul>
+          <li>IATA Lithium Battery Guidance: <a target="_blank" rel="noopener" href="https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/">iata.org</a></li>
+          <li>TSA What Can I Bring (US): <a target="_blank" rel="noopener" href="https://www.tsa.gov/travel/security-screening/whatcanibring">tsa.gov</a></li>
+          <li>EU Security Liquids (100ml rule): <a target="_blank" rel="noopener" href="https://ec.europa.eu/transport/themes/security/air/hand-luggage-liquids_en">ec.europa.eu</a></li>
+          <li>US Customs and Border Protection (CBP): <a target="_blank" rel="noopener" href="https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items">cbp.gov</a></li>
+          <li>Germany (BLE/Customs food import): <a target="_blank" rel="noopener" href="https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Restrictions_node.html">zoll.de</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>Prototype v0.1 • Data may be incomplete.</span>
+      </div>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+  </html>
+

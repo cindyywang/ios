@@ -1,0 +1,245 @@
+{
+  "version": "0.1",
+  "routes": {
+    "CN->US": {
+      "items": [
+        {
+          "id": "liquids-over-100ml",
+          "name": "Liquids over 100 ml in containers",
+          "keywords": ["liquid", "fluids", "toiletries", "water bottle", "shampoo"],
+          "carry_on": {
+            "status": "prohibited",
+            "conditions": "100 ml/3.4 oz per container max in 1 L bag; larger in carry-on not permitted"
+          },
+          "checked": {
+            "status": "allowed",
+            "conditions": "Securely closed; consider leak-proof packing"
+          },
+          "customs": {
+            "status": "allowed",
+            "conditions": "No specific US import restriction for ordinary liquids for personal use"
+          },
+          "sources": [
+            { "label": "TSA – Liquids Rule", "url": "https://www.tsa.gov/travel/security-screening/liquids-rule" }
+          ]
+        },
+        {
+          "id": "power-banks",
+          "name": "Power banks (spare lithium-ion batteries)",
+          "keywords": ["power bank", "battery pack", "lithium", "portable charger", "spare battery"],
+          "carry_on": {
+            "status": "restricted",
+            "conditions": "Carry-on only; ≤100 Wh allowed; 100–160 Wh requires airline approval; terminals protected"
+          },
+          "checked": {
+            "status": "prohibited",
+            "conditions": "Spare lithium batteries are not permitted in checked baggage"
+          },
+          "customs": {
+            "status": "allowed",
+            "conditions": "For personal use; commercial quantities may be restricted"
+          },
+          "sources": [
+            { "label": "IATA – Lithium Batteries", "url": "https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/" },
+            { "label": "TSA – Batteries", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/batteries" }
+          ]
+        },
+        {
+          "id": "lithium-in-device",
+          "name": "Lithium batteries installed in devices (phones, laptops)",
+          "keywords": ["phone", "laptop", "camera", "installed battery", "electronics"],
+          "carry_on": {
+            "status": "allowed",
+            "conditions": "Generally allowed; device must be protected from accidental activation"
+          },
+          "checked": {
+            "status": "restricted",
+            "conditions": "Prefer carry-on; if checked, completely powered off and protected; airline rules vary"
+          },
+          "customs": {
+            "status": "allowed",
+            "conditions": "Personal electronics permitted"
+          },
+          "sources": [
+            { "label": "IATA – Lithium Batteries", "url": "https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/" }
+          ]
+        },
+        {
+          "id": "meat-and-dairy",
+          "name": "Meat and dairy products",
+          "keywords": ["meat", "sausage", "ham", "milk", "cheese", "butter"],
+          "carry_on": { "status": "allowed", "conditions": "Security may allow; subject to customs" },
+          "checked": { "status": "allowed", "conditions": "Subject to customs restrictions at destination" },
+          "customs": {
+            "status": "prohibited",
+            "conditions": "Generally prohibited to bring into the US from abroad (animal products)"
+          },
+          "sources": [
+            { "label": "CBP – Prohibited and Restricted Items", "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items" }
+          ]
+        },
+        {
+          "id": "fresh-fruit-veg",
+          "name": "Fresh fruits and vegetables",
+          "keywords": ["fruit", "vegetable", "apple", "banana", "mango", "tomato"],
+          "carry_on": { "status": "allowed", "conditions": "Security may allow; subject to customs" },
+          "checked": { "status": "allowed", "conditions": "Subject to customs at destination" },
+          "customs": {
+            "status": "restricted",
+            "conditions": "Often prohibited or requires inspection/permits (US agriculture rules)"
+          },
+          "sources": [
+            { "label": "USDA APHIS – Travelers", "url": "https://www.aphis.usda.gov/aphis/ourfocus/planthealth/sa_international/sa_travel/ct_prohibited" }
+          ]
+        },
+        {
+          "id": "prescription-meds",
+          "name": "Prescription medications",
+          "keywords": ["medicine", "medication", "pills", "prescription", "insulin"],
+          "carry_on": {
+            "status": "allowed",
+            "conditions": "Allowed; declare if liquid over 100 ml; keep in original packaging with prescription"
+          },
+          "checked": {
+            "status": "allowed",
+            "conditions": "Allowed but keep critical meds in carry-on"
+          },
+          "customs": {
+            "status": "restricted",
+            "conditions": "Certain drugs controlled; bring prescription; quantity limits for personal use"
+          },
+          "sources": [
+            { "label": "TSA – Medications", "url": "https://www.tsa.gov/travel/special-procedures/medications" }
+          ]
+        },
+        {
+          "id": "fireworks",
+          "name": "Fireworks and explosives",
+          "keywords": ["firework", "explosive", "pyrotechnics", "gunpowder"],
+          "carry_on": { "status": "prohibited", "conditions": "Explosives are forbidden" },
+          "checked": { "status": "prohibited", "conditions": "Explosives are forbidden" },
+          "customs": { "status": "prohibited", "conditions": "Importing explosives is prohibited without special permits" },
+          "sources": [
+            { "label": "TSA – Explosives", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/fireworks" }
+          ]
+        },
+        {
+          "id": "aerosols-flammable",
+          "name": "Flammable aerosols",
+          "keywords": ["aerosol", "spray", "paint", "flammable"],
+          "carry_on": { "status": "prohibited", "conditions": "Flammable aerosols not allowed in cabin" },
+          "checked": { "status": "restricted", "conditions": "Limited toiletry aerosols allowed (quantity limits); airline rules vary" },
+          "customs": { "status": "allowed", "conditions": "No general US import issue for small personal quantities" },
+          "sources": [
+            { "label": "TSA – Aerosols", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/aerosols" }
+          ]
+        }
+      ]
+    },
+    "CN->DE": {
+      "items": [
+        {
+          "id": "liquids-over-100ml",
+          "name": "Liquids over 100 ml in containers",
+          "keywords": ["liquid", "fluids", "toiletries", "water bottle", "shampoo"],
+          "carry_on": {
+            "status": "prohibited",
+            "conditions": "100 ml per container; items must fit in 1 L resealable bag"
+          },
+          "checked": {
+            "status": "allowed",
+            "conditions": "Securely closed; consider leak-proof packing"
+          },
+          "customs": {
+            "status": "allowed",
+            "conditions": "No specific DE import restriction for ordinary liquids for personal use"
+          },
+          "sources": [
+            { "label": "EU – Liquids in Hand Luggage", "url": "https://ec.europa.eu/transport/themes/security/air/hand-luggage-liquids_en" }
+          ]
+        },
+        {
+          "id": "power-banks",
+          "name": "Power banks (spare lithium-ion batteries)",
+          "keywords": ["power bank", "battery pack", "lithium", "portable charger", "spare battery"],
+          "carry_on": {
+            "status": "restricted",
+            "conditions": "Carry-on only; ≤100 Wh allowed; 100–160 Wh requires airline approval; terminals protected"
+          },
+          "checked": {
+            "status": "prohibited",
+            "conditions": "Spare lithium batteries are not permitted in checked baggage"
+          },
+          "customs": {
+            "status": "allowed",
+            "conditions": "For personal use; commercial quantities may be restricted"
+          },
+          "sources": [
+            { "label": "IATA – Lithium Batteries", "url": "https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/" }
+          ]
+        },
+        {
+          "id": "meat-and-dairy",
+          "name": "Meat and dairy products",
+          "keywords": ["meat", "sausage", "ham", "milk", "cheese", "butter"],
+          "carry_on": { "status": "allowed", "conditions": "Security may allow; subject to customs" },
+          "checked": { "status": "allowed", "conditions": "Subject to customs restrictions at destination" },
+          "customs": {
+            "status": "prohibited",
+            "conditions": "Generally prohibited to bring into the EU from non‑EU countries (animal products)"
+          },
+          "sources": [
+            { "label": "EU – Bringing food products", "url": "https://food.ec.europa.eu/safety/official-controls-and-enforcement/imports-animals-and-products/bringing-food-products-eu_en" },
+            { "label": "German Customs – Restrictions", "url": "https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Restrictions_node.html" }
+          ]
+        },
+        {
+          "id": "fresh-fruit-veg",
+          "name": "Fresh fruits and vegetables",
+          "keywords": ["fruit", "vegetable", "apple", "banana", "mango", "tomato"],
+          "carry_on": { "status": "allowed", "conditions": "Security may allow; subject to customs" },
+          "checked": { "status": "allowed", "conditions": "Subject to customs at destination" },
+          "customs": {
+            "status": "restricted",
+            "conditions": "Often prohibited or requires inspection/permits (EU plant health rules)"
+          },
+          "sources": [
+            { "label": "EU – Plant health", "url": "https://food.ec.europa.eu/plants/plant-health-and-biosecurity/travelling-plants-and-plant-products_en" }
+          ]
+        },
+        {
+          "id": "prescription-meds",
+          "name": "Prescription medications",
+          "keywords": ["medicine", "medication", "pills", "prescription", "insulin"],
+          "carry_on": {
+            "status": "allowed",
+            "conditions": "Allowed; declare if liquid over 100 ml; keep in original packaging with prescription"
+          },
+          "checked": {
+            "status": "allowed",
+            "conditions": "Allowed but keep critical meds in carry-on"
+          },
+          "customs": {
+            "status": "restricted",
+            "conditions": "Certain medicines controlled; bring prescription; quantity limits for personal use"
+          },
+          "sources": [
+            { "label": "Germany – Medicines for personal use", "url": "https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Medicinal-products/medicinal-products_node.html" }
+          ]
+        },
+        {
+          "id": "fireworks",
+          "name": "Fireworks and explosives",
+          "keywords": ["firework", "explosive", "pyrotechnics", "gunpowder"],
+          "carry_on": { "status": "prohibited", "conditions": "Explosives are forbidden" },
+          "checked": { "status": "prohibited", "conditions": "Explosives are forbidden" },
+          "customs": { "status": "restricted", "conditions": "Import requires permits; retail fireworks generally not permitted" },
+          "sources": [
+            { "label": "German Customs – Pyrotechnic articles", "url": "https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Pyrotechnic-articles/pyrotechnic-articles_node.html" }
+          ]
+        }
+      ]
+    }
+  }
+}
+
